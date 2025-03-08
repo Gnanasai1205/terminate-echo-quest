@@ -122,6 +122,13 @@
   ::selection {
     @apply bg-primary/20 text-primary;
   }
+  
+  /* Code background styling */
+  .code-background {
+    font-family: "Fira Code", "Courier New", monospace;
+    @apply text-emerald-800 dark:text-emerald-400;
+    line-height: 1.5;
+  }
 }
 
 @layer components {

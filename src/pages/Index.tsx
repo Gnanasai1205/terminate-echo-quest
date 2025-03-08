@@ -1,10 +1,13 @@
 
 import React from "react";
 import ProcessSimulator from "@/components/ProcessSimulator";
+import CodeBackground from "@/components/CodeBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-background to-secondary/50">
+      <CodeBackground />
+      
       <header className="w-full py-6 px-6 md:px-10 flex justify-center border-b border-border/50 bg-background/95 backdrop-blur-sm z-10">
         <div className="w-full max-w-5xl flex justify-between items-center">
           <div className="flex items-center space-x-2">
@@ -19,7 +22,7 @@ const Index = () => {
         </div>
       </header>
       
-      <main className="flex-1 py-10 px-6 md:py-16">
+      <main className="flex-1 py-10 px-6 md:py-16 relative z-10">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16 space-y-4 animate-fade-in">
             <div className="inline-block chip bg-primary/10 text-primary mb-2">
@@ -62,7 +65,7 @@ const Index = () => {
         </div>
       </main>
       
-      <footer className="w-full py-6 px-6 border-t border-border/50 text-center text-sm text-muted-foreground">
+      <footer className="w-full py-6 px-6 border-t border-border/50 text-center text-sm text-muted-foreground relative z-10">
         <p>Process Terminator &copy; {new Date().getFullYear()} — A beautifully crafted OS simulator</p>
       </footer>
     </div>
